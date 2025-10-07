@@ -11,8 +11,14 @@ public class Main {
                 .setAttack(30)
                 .setDefense(8)
                 .build();
-        Monster water = new WaterMonster();
-
+        Monster water = new MonsterBuilder()
+                .setName("Tsunami")
+                .setType(ElementType.WATER)
+                .setMaxHealth(110)
+                .setAttack(22)
+                .setDefense(10)
+                .build();
+        //run battle
         Battle arena = new Battle();
         BattleResult result = arena.fight(fire, water);
 
