@@ -52,6 +52,8 @@ public abstract class Monster {
         currentHealth = Math.max(0, currentHealth = amount);
     }
 
+    public int attackPower() { return attack; }
+
     /**
      * heals monster by a certain amount (special attacks)
      */

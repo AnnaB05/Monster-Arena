@@ -29,7 +29,7 @@ public class WaterMonster extends Monster {
     public void specialAttack(Monster opponent) {
         System.out.printf("%s uses TIDAL HEAL! 🌊%n", getName());
         double multiplier = getType().effectivenessAgainst(opponent.getType());
-        int damage = (int) Math.max(1, (18 * 1.2 * multiplier) - 5);
+        int damage = (int) Math.max(1, (attackPower() * 1.2 * multiplier) - 5);
         opponent.takeDamage(damage);
         heal(10);
         System.out.printf("%s deals %d damage and heals 10 HP!%n", getName(), damage);

@@ -29,7 +29,7 @@ public class GrassMonster extends Monster {
     public void specialAttack(Monster opponent) {
         System.out.printf("%s uses VINE DRAIN! 🌿%n", getName());
         double multiplier = getType().effectivenessAgainst(opponent.getType());
-        int damage = (int) Math.max(1, (20 * 1.1 * multiplier) - 4);
+        int damage = (int) Math.max(1, (attackPower() * 1.1 * multiplier) - 4);
         opponent.takeDamage(damage);
         heal(5);
         System.out.printf("%s drains %d HP from %s!%n", getName(), 5, opponent.getName());
