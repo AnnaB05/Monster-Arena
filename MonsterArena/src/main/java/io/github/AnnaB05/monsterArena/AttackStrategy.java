@@ -4,6 +4,7 @@ package io.github.AnnaB05.monsterArena;
 /**
  * CURRENTLY NOT IN USE
  * IN THE FUTURE: I would like for monsters to be able to swap out attack strategies dynamically
+ * might implement that to go with Auto Battler mode in the future
  */
 
 /**
