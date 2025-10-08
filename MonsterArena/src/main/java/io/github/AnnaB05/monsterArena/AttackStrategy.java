@@ -1,0 +1,21 @@
+package io.github.AnnaB05.monsterArena;
+
+
+/**
+ * CURRENTLY NOT IN USE
+ * IN THE FUTURE: I would like for monsters to be able to swap out attack strategies dynamically
+ */
+
+/**
+ * Defines a contract for attack behaviors and allows for plug-in attack strategies (basic/special/random)
+ */
+
+public interface AttackStrategy {
+    void execute(Monster attacker, Monster defender);
+
+    public class BasicAttackStrategy implements AttackStrategy {
+        public void execute(Monster attacker, Monster defender) {
+            attacker.basicAttack(defender);
+        }
+    }
+}
