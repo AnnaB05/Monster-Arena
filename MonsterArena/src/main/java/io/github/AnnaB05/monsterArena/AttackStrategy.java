@@ -1,8 +1,13 @@
 package io.github.AnnaB05.monsterArena;
 
+
 /**
- * Defines a contract for attack behaviors
- * Allows for plug-in attack strategies (basic/special/random)
+ * CURRENTLY NOT IN USE
+ * IN THE FUTURE: I would like for monsters to be able to swap out attack strategies dynamically
+ */
+
+/**
+ * Defines a contract for attack behaviors and allows for plug-in attack strategies (basic/special/random)
  */
 
 public interface AttackStrategy {

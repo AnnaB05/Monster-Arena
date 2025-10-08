@@ -2,6 +2,14 @@ package io.github.AnnaB05.monsterArena;
 
 import java.util.Objects;
 
+/**
+ * Abstract base class for all monsters in the arena
+ * Each monster has a name, type, health, attack, and defense stats
+ * Provides methods for basic attacks, taking damage, healing, and checking if alive
+ * Each subclass must implement its own special attack
+ * technically I could make the variables protected instead of private with getters but I need more practice with encapsulation
+ * Also could have made all of the variables final but I want to leave my options open for modification later on
+ */
 public abstract class Monster {
     private final int id;
     private String name;
@@ -48,8 +56,12 @@ public abstract class Monster {
     /**
      * Reduces monster's health by a given amount
      */
-    public void takeDamage(int amount) {
-        currentHealth = Math.max(0, currentHealth = amount);
+    public void takeDamage(int damage) {
+        currentHealth -= damage;
+        if (currentHealth < 0) {
+            currentHealth = 0;
+        }
+        System.out.printf("%s takes %d damage! (%d HP left)%n", name, damage, currentHealth);
     }
 
     public int attackPower() { return attack; }
@@ -59,6 +71,7 @@ public abstract class Monster {
      */
     public void heal(int amount) {
         currentHealth = Math.min(maxHealth, currentHealth + amount);
+        System.out.printf("%s heals %d HP! (%d/%d)%n", name , amount, currentHealth, maxHealth);
     }
 
     /**
@@ -72,6 +85,11 @@ public abstract class Monster {
     public String getName() {return name;}
     public ElementType getType() {return type;}
     public int getCurrentHealth() {return currentHealth;}
+
+    /** extra getters for UI/logging/tests */
+    public int getMaxHealth() {return maxHealth;}
+    public int getAttack() {return attack;}
+    public int getDefense() {return defense;}
 
 
     /** String representation of the monster's current state

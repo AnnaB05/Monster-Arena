@@ -5,13 +5,13 @@ package io.github.AnnaB05.monsterArena;
  * Inherits from the base Monster class.
  */
 public class FireMonster extends Monster {
-    public FireMonster(String name, int maxHealth, int attack, int defense) {
+    public FireMonster(String name) {
         super(
                 name,
                 ElementType.FIRE,
-                maxHealth,
-                attack,
-                defense
+                120,
+                40,
+                20
         );
     }
 

@@ -20,9 +20,9 @@ public class MonsterBuilder {
     public Monster build() {
         //build a simple monster subclass based on type
         return switch (type) {
-            case FIRE -> new FireMonster(name, maxHealth, attack, defense);
-            case WATER -> new WaterMonster(name, maxHealth, attack, defense);
-            case GRASS -> new GrassMonster(name, maxHealth, attack, defense);
+            case FIRE -> new FireMonster(name);
+            case WATER -> new WaterMonster(name);
+            case GRASS -> new GrassMonster(name);
         };
     }
 

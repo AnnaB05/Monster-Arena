@@ -6,12 +6,12 @@ package io.github.AnnaB05.monsterArena;
  * Inherits from the base Monster class.
  */
 public class WaterMonster extends Monster {
-    public WaterMonster(String name, int maxHealth, int attack, int defense) {
+    public WaterMonster(String name) {
         super(
                 name,
                 ElementType.WATER,
-                maxHealth,
-                attack, defense
+                130,
+                35, 25
         );
     }
 

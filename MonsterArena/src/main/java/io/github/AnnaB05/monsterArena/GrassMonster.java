@@ -6,13 +6,13 @@ package io.github.AnnaB05.monsterArena;
  */
 
 public class GrassMonster extends Monster {
-    public GrassMonster(String name, int maxHealth, int attack, int defense) {
+    public GrassMonster(String name) {
         super(
                 name,
                 ElementType.GRASS,
-                maxHealth,
-                attack,
-                defense
+                110,
+                30,
+                30
         );
     }
 
