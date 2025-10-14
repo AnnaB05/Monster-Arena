@@ -1,4 +1,7 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.battle;
+
+import io.github.AnnaB05.monsterArena.model.Monster;
+import io.github.AnnaB05.monsterArena.model.Outcome;
 
 import java.util.Random;
 

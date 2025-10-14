@@ -1,4 +1,8 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.app;
+
+import io.github.AnnaB05.monsterArena.battle.BattleMenu;
+import io.github.AnnaB05.monsterArena.model.Monster;
+import io.github.AnnaB05.monsterArena.battle.MonsterSelector;
 
 /**
  * Entry point for Monster Arena (Outcome-based results).
@@ -9,7 +13,7 @@ package io.github.AnnaB05.monsterArena;
  *  - MonsterSelector.java, BattleMenu.java (optional for interactive play)
  *  - Monster hierarchy: Monster, FireMonster, WaterMonster, GrassMonster, ElementType
  */
-public class Main {
+public class ConsoleMain {
     public static void main(String[] args) {
         /** Monster Selection
          * MonsterSelector uses BattleMenu class to allow user to pick their monster

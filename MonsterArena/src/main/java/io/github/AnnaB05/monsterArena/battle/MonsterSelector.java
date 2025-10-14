@@ -1,4 +1,9 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.battle;
+
+import io.github.AnnaB05.monsterArena.model.FireMonster;
+import io.github.AnnaB05.monsterArena.model.GrassMonster;
+import io.github.AnnaB05.monsterArena.model.Monster;
+import io.github.AnnaB05.monsterArena.model.WaterMonster;
 
 import java.util.Scanner;
 

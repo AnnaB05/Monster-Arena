@@ -1,4 +1,6 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.builder;
+
+import io.github.AnnaB05.monsterArena.model.*;
 
 /**
  * Builder class to easily create custom monsters

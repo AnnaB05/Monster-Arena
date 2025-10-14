@@ -1,4 +1,4 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.model;
 
 /**
  * A class representing a Fire-type Monster with a strong Flame Burst attack.

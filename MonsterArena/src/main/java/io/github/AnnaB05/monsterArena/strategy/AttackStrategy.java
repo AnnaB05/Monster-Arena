@@ -1,4 +1,4 @@
-package io.github.AnnaB05.monsterArena;
+package io.github.AnnaB05.monsterArena.strategy;
 
 
 /**
@@ -6,6 +6,8 @@ package io.github.AnnaB05.monsterArena;
  * IN THE FUTURE: I would like for monsters to be able to swap out attack strategies dynamically
  * might implement that to go with Auto Battler mode in the future
  */
+
+import io.github.AnnaB05.monsterArena.model.Monster;
 
 /**
  * Defines a contract for attack behaviors and allows for plug-in attack strategies (basic/special/random)
